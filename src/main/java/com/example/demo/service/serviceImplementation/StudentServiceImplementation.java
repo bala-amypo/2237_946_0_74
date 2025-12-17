@@ -15,10 +15,13 @@ public class StudentServiceImplementation implements StudentService
     @Autowired
     StudentRepository sturep;
 
+    @Override
     Student createData(Student stu)
     {
         return sturep.save(stu);
     }
+    
+    @Override
     List<Student> fetchRecord()
     {
         return sturep.findAll();
