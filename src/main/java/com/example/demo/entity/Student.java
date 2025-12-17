@@ -6,8 +6,6 @@ import jakarta.persistence.*;
 public class Student 
 {
 
-    
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -41,7 +39,7 @@ public class Student
     }
     public Student(long id,String name,String email,float cgpa)
     {
-        this.id = id;
+        // this.id = id;
         this.name = name;
         this.email = email;
         this.cgpa = cgpa;
