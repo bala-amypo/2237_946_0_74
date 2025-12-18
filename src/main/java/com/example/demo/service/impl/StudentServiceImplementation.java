@@ -26,4 +26,16 @@ public class StudentServiceImplementation implements StudentService
     {
         return sturep.findAll();
     }
+
+    @Override
+    public Optional<Student> fetchDataById(int id)
+    {
+        return sturep.findById(id);
+    }
+
+    @Override
+    public void deleteDataById(int id)
+    {
+        sturep.deleteById(id);
+    }    
 }
