@@ -26,7 +26,7 @@ public class StudentController
         return ser.fetchRecord();
     }
 
-    @PutMapping("/updatedate/{id}")
+    @PutMapping("/updatedatabyid/{id}")
     public String updateDateById(@PathVariable int id,@RequestBody Student stu)
     {
 
